@@ -10,7 +10,7 @@ export default function CounterDecrease () {
                 setCounter (counter - 1)
                 }}>Decrease
             </button>
-            <div>
+            <div className="counter">
                 {counter}
             </div>
             <button onClick={ () => {

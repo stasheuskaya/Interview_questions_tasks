@@ -15,6 +15,9 @@ export default function Counter () {
                     setCounter (counter + 1) }}>
                     Increment number by one
                 </button>
+                <button onClick={ () => {
+                    setCounter(0)
+                }}>Reset</button>
             </div>
         </>
     )

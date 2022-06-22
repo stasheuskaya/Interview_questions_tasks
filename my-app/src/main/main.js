@@ -4,9 +4,14 @@ import CounterDecrease from '../tasks/increase_counter/increase_decrease_counter
 
 export default function Main () {
     return (
-        <div className="main">
-            <Counter />
-            <CounterDecrease />
-        </div>
+        <>
+            <header>
+                
+            </header>
+            <div className="main">
+                <Counter />
+                <CounterDecrease />
+            </div>
+        </>
     )
 }
