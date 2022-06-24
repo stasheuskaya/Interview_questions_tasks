@@ -1,3 +1,8 @@
 .decrease {
+    display: contents;
+}
+
+.decreaseButtonContainer {
     display: flex;
+    padding-bottom: 25px;
 }

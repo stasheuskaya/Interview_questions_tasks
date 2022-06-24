@@ -1,10 +1,13 @@
 div .bitcoin {
     display: flex;
+    background-color: aliceblue;
+    padding: 25px;
 }
 .bitcoinItem {
-    border-color: aqua;
+    border-color: white;
     border-style: dashed;
     width:fit-content;
     height:auto;
     padding: 15px;
 }
+

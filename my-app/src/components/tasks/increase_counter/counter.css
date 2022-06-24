@@ -2,6 +2,14 @@ button {
     margin: 10px;
     height: 30px;
 }
+.counterContainer {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+}
 
 .counter {
     width: 30px;

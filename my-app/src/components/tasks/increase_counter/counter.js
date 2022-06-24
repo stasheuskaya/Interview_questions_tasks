@@ -6,8 +6,8 @@ export default function Counter () {
     
     return (
         <div>
-            <div className="main">
-                Increase counter by 1
+            <div className="counterContainer">
+                <h1>Increase counter by 1</h1>
                 <div className='counter'>
                     {counter}
                 </div>

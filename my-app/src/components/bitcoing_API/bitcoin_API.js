@@ -46,9 +46,9 @@ export default function BitcoinPrice(props) {
                     <BitcoinItem 
                         chartName = {bitcoinData.chartName}
                         disclaimer = {bitcoinData.disclaimer}
-                        time = {bitcoinData.time}
-                        description = {bitcoinData.bpi.USD.description}
-                        rate = {bitcoinData.bpi.USD.rate}
+                        // time = {bitcoinData.time}
+                        // description = {bitcoinData.bpi.USD.description}
+                        // rate = {bitcoinData.bpi.USD.rate}
                     />
                 </div>
             </div>

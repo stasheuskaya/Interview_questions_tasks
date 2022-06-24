@@ -6,17 +6,23 @@ export default function CounterDecrease () {
 
     return (
         <div className="decrease">
-            <button onClick={ () => {
-                setCounter (counter - 1)
-                }}>Decrease
-            </button>
-            <div className="counter">
-                {counter}
+            <div>
+                <h1>Decrease counter by 1</h1>
             </div>
-            <button onClick={ () => {
-                setCounter (counter + 1)
-                }}>Increase
-            </button>
+
+            <div className="decreaseButtonContainer">
+                <button onClick={ () => {
+                    setCounter (counter - 1)
+                    }}>Decrease
+                </button>
+                <div className="counter">
+                    {counter}
+                </div>
+                <button onClick={ () => {
+                    setCounter (counter + 1)
+                    }}>Increase
+                </button>
+            </div>
         </div>
     )
 }
