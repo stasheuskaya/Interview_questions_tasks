@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import { fetchRandomData } from '../API_info/API_info';
-import BitcoinItem from "./bitcoin_API_item";
-import './bitcoin.css';
+import { fetchRandomData } from '../api/api';
+import BitcoinItem from "./bitcoin_rate_item";
+import './bitcoin_rate.css';
 // import CurrencyItem from "./currency_item";
 
-export default function BitcoinPrice(props) {
+export default function BitcoinRate(props) {
     const [bitcoinData, setBitcoinData] = useState(null);
     const [hidden, setHidden] = useState(true);
 

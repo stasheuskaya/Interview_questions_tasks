@@ -11,3 +11,7 @@ div .bitcoin {
     padding: 15px;
 }
 
+.bitcoin button {
+    display: block;
+margin: auto;
+}
