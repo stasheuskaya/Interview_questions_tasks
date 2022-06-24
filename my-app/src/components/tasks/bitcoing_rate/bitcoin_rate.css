@@ -1,8 +1,10 @@
 div .bitcoin {
     display: flex;
+    width: 100wv;
     background-color: aliceblue;
     padding: 25px;
 }
+
 .bitcoinItem {
     border-color: white;
     border-style: dashed;
@@ -14,4 +16,10 @@ div .bitcoin {
 .bitcoin button {
     display: block;
 margin: auto;
+}
+
+.bitcoinHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

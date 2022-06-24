@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import { fetchRandomData } from '../api/api';
+import { fetchRandomData } from '../../../services/api';
 import BitcoinItem from "./bitcoin_rate_item";
 import './bitcoin_rate.css';
 // import CurrencyItem from "./currency_item";
@@ -18,7 +18,7 @@ export default function BitcoinRate(props) {
     return (
         <div className="bitcoin">
             <div>
-                
+                <h1 className="bitcoinHeader">Bitcoin currency rate</h1>
                 <button onClick={ () => {
                     setHidden(!hidden)
                 }}>

@@ -1,26 +1,26 @@
 export default function BitcoinItem (props) {
     return (
         <div className="bitcoinItem">
-            <h1>
+            <h2>
                 {props.chartName} daily rate
-            </h1>
+            </h2>
             <div>
-                <h1>Disclaimer</h1>
+                <h2>Disclaimer</h2>
                 {props.disclaimer}
             </div>
             <div>
                 {props.data}
             </div>
             <div>
-                <h1>Date</h1>
+                <h2>Date</h2>
                 {props.time.updated}
             </div>
             <div>
-                <h1>Currency</h1>
+                <h2>Currency</h2>
                 {props.description}
             </div>
             <div>
-                <h1>BPI USD rate:</h1>
+                <h2>BPI USD rate:</h2>
                 {props.rate}
             </div>
         </div>
