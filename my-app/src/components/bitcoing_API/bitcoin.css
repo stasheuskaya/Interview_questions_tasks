@@ -1,0 +1,10 @@
+div .bitcoin {
+    display: flex;
+}
+.bitcoinItem {
+    border-color: aqua;
+    border-style: dashed;
+    width:fit-content;
+    height:auto;
+    padding: 15px;
+}

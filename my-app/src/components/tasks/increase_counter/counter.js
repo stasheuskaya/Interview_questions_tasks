@@ -5,9 +5,9 @@ export default function Counter () {
     const [counter, setCounter] = useState(0);
     
     return (
-        <>
+        <div>
             <div className="main">
-                Counter
+                Increase counter by 1
                 <div className='counter'>
                     {counter}
                 </div>
@@ -19,6 +19,6 @@ export default function Counter () {
                     setCounter(0)
                 }}>Reset</button>
             </div>
-        </>
+        </div>
     )
 }
