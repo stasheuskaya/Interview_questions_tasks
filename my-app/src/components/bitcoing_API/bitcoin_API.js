@@ -1,55 +1,37 @@
 import { useEffect, useState } from "react";
 import React from "react";
-// import { fetchRandomData } from '../API_info/API_info';
-import axios from 'axios';
+import { fetchRandomData } from '../API_info/API_info';
 import BitcoinItem from "./bitcoin_API_item";
 import './bitcoin.css';
-
-export const fetchRandomData = () => {
-
-    return axios.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-       
-        .then(({data}) => {
-            console.log(data)
-            return data;
-        })
-
-        .catch(err => {
-            console.error(err)
-        })
-}
-
+// import CurrencyItem from "./currency_item";
 
 export default function BitcoinPrice(props) {
-    const [bitcoinData, setBitcoinData] = useState([]);
-    // const [hidden, setHidden] = useState();
+    const [bitcoinData, setBitcoinData] = useState(null);
+    const [hidden, setHidden] = useState(true);
 
     useEffect(() => {
         fetchRandomData().then(randomData => {
-            console.log(randomData.disclaimer)
             setBitcoinData(randomData)
         });
-    }, [])
+    }, []);
 
     return (
         <div className="bitcoin">
             <div>
                 
                 <button onClick={ () => {
-                    fetchRandomData();
+                    setHidden(!hidden)
                 }}>
                     Fetch Bitcoin currency rate
                 </button>
                 <div>
-                </div>
-                <div>
-                    <BitcoinItem 
+                    {!hidden && bitcoinData && <BitcoinItem 
                         chartName = {bitcoinData.chartName}
                         disclaimer = {bitcoinData.disclaimer}
-                        // time = {bitcoinData.time}
-                        // description = {bitcoinData.bpi.USD.description}
-                        // rate = {bitcoinData.bpi.USD.rate}
-                    />
+                        time = {bitcoinData.time}
+                        description = {bitcoinData.bpi.USD.description}
+                        rate = {bitcoinData.bpi.USD.rate}
+                    />}
                 </div>
             </div>
         </div>

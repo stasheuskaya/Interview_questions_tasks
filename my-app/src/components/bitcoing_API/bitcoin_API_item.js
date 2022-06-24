@@ -11,7 +11,7 @@ export default function BitcoinItem (props) {
             <div>
                 {props.data}
             </div>
-            {/* <div>
+            <div>
                 <h1>Date</h1>
                 {props.time.updated}
             </div>
@@ -22,7 +22,7 @@ export default function BitcoinItem (props) {
             <div>
                 <h1>BPI USD rate:</h1>
                 {props.rate}
-            </div> */}
+            </div>
         </div>
     )
 }
