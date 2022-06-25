@@ -5,9 +5,10 @@ export default function Counter () {
     const [counter, setCounter] = useState(0);
     
     return (
-        <div>
-            <div className="counterContainer">
-                <h1>Increase counter by 1</h1>
+        <div className="counterContainer">
+            {/* <h1>Increase counter by 1</h1> */}
+            
+            <h1>Increase counter by 1</h1>
                 <div className='counter'>
                     {counter}
                 </div>
@@ -18,7 +19,7 @@ export default function Counter () {
                 <button onClick={ () => {
                     setCounter(0)
                 }}>Reset</button>
-            </div>
+            
         </div>
     )
 }

@@ -1,0 +1,16 @@
+.dataSection {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    height: 850px;
+}
+.renderJSON {
+    display: flex;
+    padding: 25px;
+    height: fit-content;
+}
+
+pre {
+    padding: 25px;
+}

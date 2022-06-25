@@ -1,8 +1,9 @@
 div .bitcoin {
     display: flex;
-    width: 100wv;
+    width: 1000px;
     background-color: aliceblue;
     padding: 25px;
+    flex-direction: column;
 }
 
 .bitcoinItem {
